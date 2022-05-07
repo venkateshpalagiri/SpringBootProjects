@@ -6,4 +6,7 @@ import com.venkatesh.springboot.youtube.entity.Employee;
 
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 
+	public Employee findByEmployeeName(String employeeName);
+
+	public Employee findByEmployeeContact(Long employeeContact);
 }
